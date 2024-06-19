@@ -21,7 +21,8 @@ This project is a web application that allows users to access personal informati
 
 ## Usage
 
-  [click here](https://jeancrock.github.io/graphql/)
+  <a href="https://jeancrock.github.io/graphql/" target="_blank">click here</a>
+
     Login :
     Enter your username/email and password to log in.
     Once logged in, your personal informations will be displayed.
