@@ -83,6 +83,7 @@ async function Query(jwt) {
 }
 
 async function Connected(userInfo) {
+    console.log("userInfo", userInfo);
     SetUserValues(userInfo);
 
     let connnectedDiv = document.getElementById("connected");
@@ -90,7 +91,48 @@ async function Connected(userInfo) {
 
     let discoBtn = document.getElementById("disco");
     discoBtn.onclick = function (userInfo) {
-        userInfo = {};
+        userInfo = {
+            user:[
+                {
+                  attrs: {
+                    Phone: "",
+                    email: "",
+                    gender: "",
+                    country: "",
+                    foundus: "",
+                    attentes: "" ,
+                    lastName: "",
+                    Situation: "",
+                    firstName: "",
+                    addressCity: "",
+                    dateOfBirth: "",
+                    emergencyTel: "",
+                    placeOfBirth: "",
+                    addressStreet: "",
+                    addressCountry: "",
+                    countryOfBirth: "",
+                    addressPostalCode: "",
+                    emergencyLastName: "",
+                    mailcheckAccepted: "",
+                    emergencyFirstName: "",
+                    emergencyAffiliation: "",
+                    addressComplementStreet: ""
+                  },
+                  firstName: "",
+                  lastName: "",
+                  totalUp: 0,
+                  totalDown: 0,
+                  auditRatio: 0.0,
+                  login: "",
+                  events: [
+                    {
+                      level: 0
+                    }
+                  ]
+                }
+              ],
+              transaction: []
+        };
 
         loginDiv.style.visibility = "visible";
         connnectedDiv.style.visibility = "hidden";
@@ -111,10 +153,8 @@ async function SetUserValues(userInfo) {
 
     console.log("userInfo", userInfo);
 
-    let userLog = document.getElementById("id");
-    let userPsw = document.getElementById("pw");
-    userLog.value = "";
-    userPsw.value = "";
+    document.getElementById("id").value = "";
+    document.getElementById("pw").value = "";
 
     let giteaLink = document.getElementById("navGit");
     giteaLink.setAttribute("href", "https://zone01normandie.org/git/" + userInfo.user[0].login);
