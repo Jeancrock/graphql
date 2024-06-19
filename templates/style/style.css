@@ -18,7 +18,7 @@ body {
     height: 100vh;
     position: fixed;
     opacity: 0.1;
-    background: center / cover url(/templates/style/src/01-trame.svg);
+    background: center / cover url(./src/01-trame.svg);
 }
 
 #left,
