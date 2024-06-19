@@ -181,13 +181,14 @@ main {
     overflow: hidden;
     position: absolute;
     display: block;
-    background: rgb(100, 0, 50, 0.25);
     margin: 2%;
     top: 7.5%;
     left: 50%;
     width: 90%;
     height: 91%;
     transform: translateX(-52%);
+    background: center / cover url(./src/01-trame.svg);
+    background-color: rgba(100, 0, 50, 0.25);
 }
 
 #hello,
@@ -196,7 +197,7 @@ main {
     font-size: xxx-large;
     font-weight: bold;
     padding: 1%;
-    background: #1a191c;
+    background: rgba(26, 25, 28, 0.85);
     color: rgb(175, 175, 175);
     width: 96%;
     height: 15%;
@@ -212,7 +213,7 @@ main {
 #svgLeft,
 #svgRight {
     margin: 1%;
-    background: #1a191c;
+    background: rgba(26, 25, 28, 0.85);
     color: rgb(175, 175, 175);
     width: 48%;
     height: 100%;
